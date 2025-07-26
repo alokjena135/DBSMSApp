@@ -1,0 +1,11 @@
+﻿#txtFirstName, #txtMiddleName, #txtLastName, #txt_F_FirstName {
+    box-shadow: none;
+}
+
+#txt_F_LastName, #txt_F_MiddleName, #txt_M_FirstName, #txt_M_MiddleName {
+    box-shadow: none;
+}
+
+#txt_M_LastName, #txtDob, #txtMobileNumber {
+    box-shadow: none;
+}

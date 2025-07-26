@@ -1,0 +1,255 @@
+﻿@import url('SMSRegistration.css');
+@import url('Controls.css');
+
+.sms-font-family-2 {
+    font-family: serif,Arial, Helvetica, sans-serif;
+}
+
+div.sms-nav-icon-left + div {
+    font-family: Courgette,Arial;
+    font-size: 28px;
+    text-shadow: 1px 1px 2px #1223A9;
+    cursor: pointer;
+}
+
+div.sms-nav-icon-left a {
+    color: #1223a9 !important;
+    text-shadow: 1px 1px 2px #62799b;
+}
+
+/* Main NAV Start */
+div.sms-nav-option ul.sms-ul-manu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: 32px;
+}
+
+ul.sms-ul-manu li {
+    padding: 0px 16px 0px 16px;
+    white-space: nowrap;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+
+li > a:hover {
+    color: #0e319a;
+    text-decoration: underline;
+    transition: text-decoration 2s;
+}
+/* Main NAV End */
+
+/* SMS ACTION EVENT START */
+.sms-action-event {
+    width: 100%;
+}
+
+div.sms-action-event div > button, li a {
+    font-size: 15px;
+    font-family: serif,Arial, Helvetica, sans-serif;
+}
+
+div.sms-action-event div > button {
+    background: #f8f9fa;
+    border: 1px solid #eaecee;
+    color: black;
+}
+
+.sms-action-event div > button:hover {
+    box-shadow: 0px 2px 5px #0f0e0e2e, 0px 2px 5px #0f0e0e2e;
+    transition-duration: 0.25s;
+}
+
+/* SMS ACTION EVENT END */
+.sms-font-family {
+    font-family: Courgette,Arial;
+}
+
+div.sms-right-content-head-2 h2 {
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    border-color: #00394f;
+    background-color: #00394f;
+    padding: 11px 24px;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.sms-btn-secondary:hover {
+    background-color: #00212e;
+    color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 2.5px 17px 0 rgb(0 0 0 / 11%);
+    transition: 0.25s;
+}
+
+div.sms-Intermodel-Logo img {
+    width: 50%;
+}
+
+.sms-Intermodel-border-dfdfdf {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.sms-Intermodel-card-shadow {
+    box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 13%), 0 0.6px 1.8px 0 rgb(0 0 0 / 11%);
+    transition: 0.25s;
+}
+
+div.sms-Student-Registration-Info-Panel img {
+    width: 100%;
+}
+
+.sms-border-right {
+    border-right: 1px solid #DFDFDF;
+}
+
+.sms-border-all {
+    border: 1px solid #DFDFDF;
+}
+
+.sms-border-left {
+    border-right: 1px solid #DFDFDF;
+}
+
+.sms-border-top {
+    border-top: 1px solid #DFDFDF;
+}
+
+.sms-border-buttom {
+    border-bottom: 1px solid #DFDFDF;
+}
+
+div.card-body a {
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+div.Read-More-Block a {
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
+    div.Read-More-Block a span {
+        position: relative;
+        top: 1.3px;
+        left: 2px;
+    }
+
+    div.Read-More-Block a:hover {
+        box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 13%), 0 0.3px 0.9px 0 rgb(0 0 0 / 11%);
+        transition: box-shadow steps(1, start);
+    }
+/*Page Footer Start*/
+
+
+#Footer_CopyRight, #Footer_Contect {
+    background-color: #0D3E89;
+}
+
+    #Footer_CopyRight div div.copy-right {
+        font-size: 13px;
+        position: relative;
+        bottom: 2.3px;
+    }
+
+#AddressBlock div.block-footer ul {
+    padding: 0;
+}
+
+div.block-02 ul li {
+    display: table;
+    font-size: 13.19px;
+}
+
+div.block-footer ul li {
+    display: table;
+    font-size: 13.19px;
+}
+
+    div.block-footer ul li p {
+        display: table-cell;
+    }
+
+    div.block-footer ul li span {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 1.5px;
+    }
+
+div#Footer_Link_Block .block-footer ul li span {
+    position: static;
+}
+
+div#Footer_Subscribe_Block .block-footer ul li #txtEmail {
+    border-radius: inherit;
+    text-align: center;
+}
+
+div.block-footer ul {
+    padding: 0;
+}
+
+    div.block-footer ul li a {
+        color: #f8f9fa;
+    }
+
+    div.block-footer ul li #txtEmail {
+        box-shadow: none;
+    }
+
+    div.block-footer ul li #btnSubscribe {
+        box-shadow: none;
+        border-radius: inherit;
+        min-width: 206.4px;
+        max-width: 206.4px;
+        background-color: #0978a2;
+        border-color: #0978a2;
+        padding: 6px 12px;
+    }
+
+        div.block-footer ul li #btnSubscribe:hover {
+            background-color: dodgerblue;
+        }
+/*Page Footer End*/
+
+
+/* scrollbar Start*/
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+/*::-webkit-scrollbar-track {
+  
+  border-radius: 10px;
+}*/
+
+/* Handle */
+/*::-webkit-scrollbar-thumb {
+  background: #0D6EFD;
+}*/
+
+/* Handle on hover */
+/*::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}*/
+/* scrollbar End*/

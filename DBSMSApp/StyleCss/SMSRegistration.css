@@ -1,0 +1,17 @@
+﻿section#SMSRegistration_Hero_Block {
+    height: 300px;
+    background-image: url(../Pictures/page-banner/smsRegistration.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section.Hero div.overlay {
+    height: 100%;
+    background-color: #0d6efd;
+    opacity: .2;
+}
+
+div.Reg-width-900PX {
+    width: 900px;
+}

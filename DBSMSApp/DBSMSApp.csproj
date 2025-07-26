@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26697177-CF2A-48D7-88C3-24A157713D28}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBSMSApp</RootNamespace>
+    <AssemblyName>DBSMSApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SMS.Resource">
+      <HintPath>..\SMS.Resource\bin\Debug\SMS.Resource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CssPlugins\css\bootstrap-grid.css" />
+    <Content Include="CssPlugins\css\bootstrap-grid.min.css" />
+    <Content Include="CssPlugins\css\bootstrap-grid.rtl.css" />
+    <Content Include="CssPlugins\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="CssPlugins\css\bootstrap-reboot.css" />
+    <Content Include="CssPlugins\css\bootstrap-reboot.min.css" />
+    <Content Include="CssPlugins\css\bootstrap-reboot.rtl.css" />
+    <Content Include="CssPlugins\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="CssPlugins\css\bootstrap-utilities.css" />
+    <Content Include="CssPlugins\css\bootstrap-utilities.min.css" />
+    <Content Include="CssPlugins\css\bootstrap-utilities.rtl.css" />
+    <Content Include="CssPlugins\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="CssPlugins\css\bootstrap.css" />
+    <Content Include="CssPlugins\css\bootstrap.min.css" />
+    <Content Include="CssPlugins\css\bootstrap.rtl.css" />
+    <Content Include="CssPlugins\css\bootstrap.rtl.min.css" />
+    <Content Include="CssPlugins\js\bootstrap.bundle.js" />
+    <Content Include="CssPlugins\js\bootstrap.bundle.min.js" />
+    <Content Include="CssPlugins\js\bootstrap.esm.js" />
+    <Content Include="CssPlugins\js\bootstrap.esm.min.js" />
+    <Content Include="CssPlugins\js\bootstrap.js" />
+    <Content Include="CssPlugins\js\bootstrap.min.js" />
+    <Content Include="customjs\customjs.js" />
+    <Content Include="favicon\sms-fabicaon-1.png" />
+    <Content Include="favicon\sms-fabicon.png" />
+    <Content Include="fontawesome-6.2.1\css\all.css" />
+    <Content Include="fontawesome-6.2.1\css\all.min.css" />
+    <Content Include="fontawesome-6.2.1\css\brands.css" />
+    <Content Include="fontawesome-6.2.1\css\brands.min.css" />
+    <Content Include="fontawesome-6.2.1\css\fontawesome.css" />
+    <Content Include="fontawesome-6.2.1\css\fontawesome.min.css" />
+    <Content Include="fontawesome-6.2.1\css\regular.css" />
+    <Content Include="fontawesome-6.2.1\css\regular.min.css" />
+    <Content Include="fontawesome-6.2.1\css\solid.css" />
+    <Content Include="fontawesome-6.2.1\css\solid.min.css" />
+    <Content Include="fontawesome-6.2.1\css\svg-with-js.css" />
+    <Content Include="fontawesome-6.2.1\css\svg-with-js.min.css" />
+    <Content Include="fontawesome-6.2.1\css\v4-font-face.css" />
+    <Content Include="fontawesome-6.2.1\css\v4-font-face.min.css" />
+    <Content Include="fontawesome-6.2.1\css\v4-shims.css" />
+    <Content Include="fontawesome-6.2.1\css\v4-shims.min.css" />
+    <Content Include="fontawesome-6.2.1\css\v5-font-face.css" />
+    <Content Include="fontawesome-6.2.1\css\v5-font-face.min.css" />
+    <Content Include="JS\jquery-3.6.1.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="CssPlugins\css\bootstrap-grid.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-grid.min.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-reboot.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-reboot.min.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-utilities.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-utilities.min.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="CssPlugins\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="CssPlugins\css\bootstrap.css.map" />
+    <Content Include="CssPlugins\css\bootstrap.min.css.map" />
+    <Content Include="CssPlugins\css\bootstrap.rtl.css.map" />
+    <Content Include="CssPlugins\css\bootstrap.rtl.min.css.map" />
+    <Content Include="CssPlugins\js\bootstrap.bundle.js.map" />
+    <Content Include="CssPlugins\js\bootstrap.bundle.min.js.map" />
+    <Content Include="CssPlugins\js\bootstrap.esm.js.map" />
+    <Content Include="CssPlugins\js\bootstrap.esm.min.js.map" />
+    <Content Include="CssPlugins\js\bootstrap.js.map" />
+    <Content Include="CssPlugins\js\bootstrap.min.js.map" />
+    <Content Include="fontawesome-6.2.1\webfonts\fa-brands-400.ttf" />
+    <Content Include="fontawesome-6.2.1\webfonts\fa-brands-400.woff2" />
+    <Content Include="fontawesome-6.2.1\webfonts\fa-regular-400.ttf" />
+    <Content Include="fontawesome-6.2.1\webfonts\fa-regular-400.woff2" />
+    <Content Include="fontawesome-6.2.1\webfonts\fa-solid-900.ttf" />
+    <Content Include="fontawesome-6.2.1\webfonts\fa-solid-900.woff2" />
+    <Content Include="fontawesome-6.2.1\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="fontawesome-6.2.1\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="Page\SMSRegistrationForm.aspx" />
+    <Content Include="Pictures\card-logo\sms-card-admissin.ico" />
+    <Content Include="Pictures\card-logo\sms-card-assignment.ico" />
+    <Content Include="Pictures\card-logo\sms-card-attendance.ico" />
+    <Content Include="Pictures\card-logo\sms-card-idcard.ico" />
+    <Content Include="Pictures\card-logo\sms-card-noticeboard.ico" />
+    <Content Include="Pictures\card-logo\sms-card-reportcard.ico" />
+    <Content Include="Pictures\card-logo\sms-card-transfer-certificate.ico" />
+    <Content Include="Pictures\card-logo\sms-card-student-login.ico" />
+    <Content Include="Pictures\card-logo\sms-entrance-exam.ico" />
+    <Content Include="Pictures\card-logo\sms-Student-Registration.ico" />
+    <Content Include="Pictures\courses\12th_image.jpg" />
+    <Content Include="Pictures\courses\graduation_image.jpg" />
+    <Content Include="Pictures\courses\masters_image.jpg" />
+    <Content Include="Pictures\page-banner\sms-student-left.png" />
+    <Content Include="Pictures\page-banner\smsRegistration.jpg" />
+    <Content Include="StyleCss\Controls.css" />
+    <Content Include="StyleCss\SMSRegistration.css" />
+    <Content Include="StyleCss\smsStyle.css" />
+    <Content Include="textfont\wEO_EBrAnc9BLjLQAUk1WPoK7Es.woff2" />
+    <Content Include="textfont\wEO_EBrAnc9BLjLQAUk1VvoK.woff2" />
+    <Content Include="Page\SMSMasterReg.Master" />
+    <Content Include="Link\common.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Page\SMSHome.aspx" />
+    <Content Include="textfont\Courgette.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBhelper.cs" />
+    <Compile Include="Models\JsonHelper.cs" />
+    <Compile Include="Page\SMSHome.aspx.cs">
+      <DependentUpon>SMSHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\SMSHome.aspx.designer.cs">
+      <DependentUpon>SMSHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\SMSMasterReg.Master.cs">
+      <DependentUpon>SMSMasterReg.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\SMSMasterReg.Master.designer.cs">
+      <DependentUpon>SMSMasterReg.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Page\SMSRegistrationForm.aspx.cs">
+      <DependentUpon>SMSRegistrationForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\SMSRegistrationForm.aspx.designer.cs">
+      <DependentUpon>SMSRegistrationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>34314</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:34314/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+﻿[
+  {
+    "slug": "SMSHome",
+    "value": "http://localhost:34314/Page/SMSHome.aspx"
+  },
+  {
+    "slug": "SMSRegistrationForm",
+    "value": "http://localhost:34314/Page/SMSRegistrationForm.aspx"
+  }
+]

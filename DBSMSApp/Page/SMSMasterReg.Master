@@ -1,0 +1,263 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SMSMasterReg.master.cs" Inherits="DBSMSApp.Page.SMSMasterReg" %>
+
+<%@ Import Namespace="Resource=SMS.Resource.Shared.SMSMasterReg" %>
+<%@ Import Namespace="DBSMSApp.Models" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../CssPlugins/css/bootstrap.css" />
+    <link rel="stylesheet" href="../CssPlugins/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="../favicon/sms-fabicaon-1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../fontawesome-6.2.1/css/all.css" />
+    <link rel="stylesheet" href="../fontawesome-6.2.1/css/v4-shims.css" />
+    <link href="../textfont/Courgette.css" rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="../StyleCss/smsStyle.css" />
+
+    <!-- Script Start -->
+    <script type="text/javascript" src="../JS/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../customjs/customjs.js"></script>
+    <script type="text/javascript" src="../CssPlugins/js/bootstrap.bundle.js"></script>
+    <!-- Script End -->
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="sms_main_body_Master">
+            <section id="SMS_section_Navigation_Head">
+                <div id="Navigation_Body" class="container-fluid bg-light position-relative shadow">
+                    <nav class="navbar navbar-expand-lg bg-light navbar-light py-1">
+                        <div class="sms-nav-icon-left">
+                            <a class="navbar-brand" href="javascript:void(0)" aria-label="sms-icon">
+                                <i class="fa-sharp fa-solid fa-graduation-cap fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="sms-text-left">
+                            <span><%=Resource.Navigation_Left_Icon %></span>
+                        </div>
+                        <div class="sms-nav-option">
+                            <ul class="sms-ul-manu">
+                                <li>
+                                    <a href="<%=JsonHelper.UrlSMSHome %>"><%=Resource.Nav_Item_Home %></a>
+                                </li>
+                                <li>
+                                    <a href="<%=JsonHelper.UrlSMSRegistration %>"><%=Resource.Nav_Item_Courses %></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><%=Resource.Nav_Item_Faculty %></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><%=Resource.Nav_Item_Events %></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><%=Resource.Nav_Item_ClassRoom %></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><%=Resource.Nav_Item_Blog %></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sms-action-event d-flex justify-content-end gap-2">
+                            <div>
+                                <button type="button" runat="server" id="btnNewReg" title="Regisration">
+                                    <i class="fa fa-solid fa-file-circle-check text-primary" aria-hidden="true"></i>
+                                    &nbsp; <%=Resource.Nav_Right_Registration %>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" runat="server" id="btnJoin" title="Join">
+                                    <i class="fa fa-user-plus text-primary" aria-hidden="true"></i>
+                                    &nbsp; <%=Resource.Nav_Right_Join %>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" runat="server" id="btnLogin" title="Login">
+                                    <i class="fa fa-sign-in text-primary" aria-hidden="true"></i>
+                                    &nbsp; <%=Resource.Nav_Right_Login %>
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <section id="Master_Section_For_Child_Page">
+                <div id="Master_Div_Block">
+                    <asp:ContentPlaceHolder ID="SMS_Body_Content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </section>
+            <section id="sms_section_Footer">
+                <footer id="sms_Home_Page_Footer">
+                    <div id="Footer_Contect" class="text-light pt-4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <div id="Have_a_Questions">
+                                        <div>
+                                            <h5>Have a Questions?</h5>
+                                        </div>
+                                        <div id="AddressBlock" class="pt-3">
+                                            <div class="block-footer">
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-location-dot"></span>
+                                                        <p>
+                                                            Pl.No : 10 , Alarapur, Near Ranga Bazar,Tankapani Rode,Sai Temple
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-phone"></span>
+                                                        <p>
+                                                            <span>+91</span>7299939748
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-envelope"></span>
+                                                        <p>
+                                                            <span>alokjena135@gmail.com</span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div id="Recent_Blog">
+                                        <div>
+                                            <h5>Recent Blog</h5>
+                                        </div>
+                                        <div id="Footer_Recent_Blog" class="pt-3">
+                                            <div class="block-footer">
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-1 fa-1x"></span>
+                                                        <a href="javascript:void(0)">Why Collect Student Feedback ?</a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-2 fa-1x"></span>
+                                                        <a href="javascript:void(0)">How Improve Learning ?</a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-3 fa-1x"></span>
+                                                        <a href="javascript:void(0)">How Improve Faculty Performance ?</a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-4 fa-1x"></span>
+                                                        <a href="javascript:void(0)">How Improve Facility ?</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div id="Link">
+                                        <div>
+                                            <h5>Link</h5>
+                                        </div>
+                                        <div id="Footer_Link_Block" class="pt-3">
+                                            <div class="block-footer">
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-arrow-right"></span>
+                                                        <a href="javascript:void(0)"><%=Resource.Nav_Item_Home %></a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-arrow-right"></span>
+                                                        <a href="javascript:void(0)"><%=Resource.Nav_Item_Courses %></a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-arrow-right"></span>
+                                                        <a href="javascript:void(0)"><%=Resource.Nav_Item_Faculty %></a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-arrow-right"></span>
+                                                        <a href="javascript:void(0)"><%=Resource.Nav_Item_Events %></a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-arrow-right"></span>
+                                                        <a href="javascript:void(0)"><%=Resource.Nav_Item_ClassRoom %></a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <span class="fa-sharp fa-solid fa-arrow-right"></span>
+                                                        <a href="javascript:void(0)"><%=Resource.Nav_Item_Blog %></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div id="Subscribe_Us">
+                                        <div>
+                                            <h5>Subscribe Us!</h5>
+                                        </div>
+                                        <div id="Footer_Subscribe_Block" class="pt-3">
+                                            <div class="block-footer">
+                                                <ul>
+                                                    <li>
+                                                        <label for="txtEmail" class="form-label">Email Id</label>
+                                                        <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Enter email address" aria-describedby="emailHelp"></asp:TextBox>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <button type="button" class="btn btn-primary" runat="server" id="btnSubscribe">
+                                                            <i class="fa-sharp fa-solid fa-paper-plane" aria-hidden="true"></i>&nbsp;
+                                                            <span class="">Subscribe</span>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Footer_CopyRight" class="text-light pb-4">
+                        <div class="container">
+                            <div class="copy-right text-center">
+                                <%=Resource.Footer_CopyRight_Text %>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </form>
+  <%--  <script type="text/javascript" src="../JS/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../CssPlugins/js/bootstrap.bundle.js"></script>--%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //console.log("Student Management System.");
+        });
+    </script>
+</body>
+</html>

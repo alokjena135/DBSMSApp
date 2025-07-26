@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Addmission_Process_Heading" xml:space="preserve">
+    <value>Student Portfolios</value>
+  </data>
+  <data name="Addmission_Process_Paragraph" xml:space="preserve">
+    <value>&lt;b&gt;A&lt;/b&gt;&amp;nbsp;collection of student work samples, student self-assessments, and goal statements that reflect student progress.</value>
+  </data>
+  <data name="Announcement_Heading" xml:space="preserve">
+    <value>For new admissions, the Student Management System provides registration</value>
+  </data>
+  <data name="Banner_Right_Action_LearnMore" xml:space="preserve">
+    <value>Learn More..</value>
+  </data>
+  <data name="Banner_Right_Heading1" xml:space="preserve">
+    <value>Student Learning Center</value>
+  </data>
+  <data name="Banner_Right_Heading2" xml:space="preserve">
+    <value>New Approach to Student Education</value>
+  </data>
+  <data name="Banner_Right_Pragraph" xml:space="preserve">
+    <value>Education is the passport to the future, for tomorrow belongs to those who prepare for it today. 
+Knowledge is power. Encourage your students to start harnessing that power today.</value>
+  </data>
+  <data name="Button_Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="Cammon_Action_Link" xml:space="preserve">
+    <value>Get More.</value>
+  </data>
+  <data name="Course_Announcement_Heading" xml:space="preserve">
+    <value>The university offers better courses to students. for 12th, graduation, and masters</value>
+  </data>
+  <data name="Entrance_Exam_Heading" xml:space="preserve">
+    <value>Entrance exam</value>
+  </data>
+  <data name="Entrance_Exam_Link" xml:space="preserve">
+    <value>Learn More.</value>
+  </data>
+  <data name="Entrance_Exam_Paragraph" xml:space="preserve">
+    <value>One of the most important aspects of our college is the entrance exam. For the new admission, it provides questions with multiple answers.</value>
+  </data>
+  <data name="Footer_CopyRight_Text" xml:space="preserve">
+    <value>&amp;#169;&amp;nbsp;2023&amp;nbsp;, Student Management System | www.smsbestcareer.com</value>
+  </data>
+  <data name="Have_a_Questions_Address" xml:space="preserve">
+    <value>Pl.No : 10 , Alarapur, Near Ranga Bazar,Tankapani Rode,Sai Temple</value>
+  </data>
+  <data name="Have_a_Questions_Contact" xml:space="preserve">
+    <value>&lt;span&gt;+91&lt;/span&gt;7299939748</value>
+  </data>
+  <data name="Have_a_Questions_Email" xml:space="preserve">
+    <value>&lt;span&gt;alokjena135@gmail.com&lt;/span&gt;</value>
+  </data>
+  <data name="Have_a_Questions_Heading" xml:space="preserve">
+    <value>Have a Questions?</value>
+  </data>
+  <data name="Nav_Item1" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="Nav_Item2" xml:space="preserve">
+    <value>COURSES</value>
+  </data>
+  <data name="Nav_Item3" xml:space="preserve">
+    <value>FACULTY</value>
+  </data>
+  <data name="Nav_Item4" xml:space="preserve">
+    <value>EVENTS</value>
+  </data>
+  <data name="Nav_Item5" xml:space="preserve">
+    <value>CLASS ROOM</value>
+  </data>
+  <data name="Nav_Item6" xml:space="preserve">
+    <value>BLOG</value>
+  </data>
+  <data name="Nav_Left_Icon_Text" xml:space="preserve">
+    <value>iAcademy</value>
+  </data>
+  <data name="Nav_Right_Join" xml:space="preserve">
+    <value>Join</value>
+  </data>
+  <data name="Nav_Right_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Nav_Right_Registration" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="Recent_Blog_Heading" xml:space="preserve">
+    <value>Recent Blog</value>
+  </data>
+  <data name="Recent_Blog_Link1" xml:space="preserve">
+    <value>Why Collect Student Feedback ?</value>
+  </data>
+  <data name="Recent_Blog_Link2" xml:space="preserve">
+    <value>How Improve Learning ?</value>
+  </data>
+  <data name="Recent_Blog_Link3" xml:space="preserve">
+    <value>How Improve Faculty Performance ?</value>
+  </data>
+  <data name="Recent_Blog_Link4" xml:space="preserve">
+    <value>How Improve Facility ?</value>
+  </data>
+  <data name="Student_Admission_Heading" xml:space="preserve">
+    <value>Admission</value>
+  </data>
+  <data name="Student_Admission_Paragraph" xml:space="preserve">
+    <value>Admission is the process by which a student applies to and is approved for entry into the university and for a university qualification.</value>
+  </data>
+  <data name="Student_Assignment_Heading" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="Student_Assignment_Paragraph" xml:space="preserve">
+    <value>Students are given a practise task as part of their assessment. Students can therefore check his assignment facility here.</value>
+  </data>
+  <data name="Student_Attendance_Heading" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="Student_Attendance_Paragraph" xml:space="preserve">
+    <value>This option allows you to check the attendance. So just click on "Attendance" to check your attendance.</value>
+  </data>
+  <data name="Student_Courses_Card_12th_Heading" xml:space="preserve">
+    <value>12&lt;sup&gt;th&lt;/sup&gt; Board (CHSE and ICSC) Courses.</value>
+  </data>
+  <data name="Student_Courses_Card_12th_Paragraph" xml:space="preserve">
+    <value>The best courses are available at the university for 12&lt;sup&gt;th&lt;/sup&gt; grade students. These courses are applicable to BSC- and CBSC-qualified students.</value>
+  </data>
+  <data name="Student_Courses_Card_Graduation_Heading" xml:space="preserve">
+    <value>Garduation Courses.</value>
+  </data>
+  <data name="Student_Courses_Card_Graduation_Paragraph" xml:space="preserve">
+    <value>Make them university graduates for a bright future, so the university provides the best courses for the student, both technical and non-technical courses.</value>
+  </data>
+  <data name="Student_Courses_Card_PostGraduation_Heading" xml:space="preserve">
+    <value>Post Graduate</value>
+  </data>
+  <data name="Student_Courses_Card_PostGraduation_Paragraph" xml:space="preserve">
+    <value>Your university degree is a stepping stone to the sky, where there are no restrictions. Try not to quit moving.</value>
+  </data>
+  <data name="Student_Get_Result_Heading" xml:space="preserve">
+    <value>Get Result</value>
+  </data>
+  <data name="Student_Get_Result_Paragraph" xml:space="preserve">
+    <value>Get Result: The student can use this option to find his semi-star result as per the course and as per the department.</value>
+  </data>
+  <data name="Student_ID_Card_Heading" xml:space="preserve">
+    <value>ID Card</value>
+  </data>
+  <data name="Student_ID_Card_Paragraph" xml:space="preserve">
+    <value>Get a unique student ID card by utilising this ID Card Facility choice. Student ID cards enable them to obtain all facilities.</value>
+  </data>
+  <data name="Student_Notoce_Board_Heading" xml:space="preserve">
+    <value>Notoce Board</value>
+  </data>
+  <data name="Student_Notoce_Board_Paragraph" xml:space="preserve">
+    <value>For any kind of new information, like event details, exam details, or any other special announcement, check the notice board.</value>
+  </data>
+  <data name="Student_Registation_From_Link" xml:space="preserve">
+    <value>Learn More.</value>
+  </data>
+  <data name="Student_Registration_Form_Heading" xml:space="preserve">
+    <value>Student registration form</value>
+  </data>
+  <data name="Student_Registration_Form_Paragraph" xml:space="preserve">
+    <value>A college enrollment form is a document that students and parents fill out immediately following admission to a college.Just roll over the SMS app.</value>
+  </data>
+  <data name="Student_Student_Login_Heading" xml:space="preserve">
+    <value>Student Login</value>
+  </data>
+  <data name="Student_Student_Login_Paragraph" xml:space="preserve">
+    <value>This site is accessible to all authorised students. with the appropriate user ID and password. Without credentials, access is denied.</value>
+  </data>
+  <data name="Student_Transfer_Certificate_Heading" xml:space="preserve">
+    <value>Transfer Certificate</value>
+  </data>
+  <data name="Student_Transfer_Certificate_Paragraph" xml:space="preserve">
+    <value>It is a document issued by any educational institute to a student when he or she wants to transfer from the institute.</value>
+  </data>
+  <data name="Subscribe_Email_Label" xml:space="preserve">
+    <value>Email Id</value>
+  </data>
+  <data name="Subscribe_Us_Heading" xml:space="preserve">
+    <value>Subscribe Us!</value>
+  </data>
+</root>
